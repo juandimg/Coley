@@ -3,17 +3,26 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+    
 }
+
+
+
+
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;;
     align-items: center;
     background-color: #0ba7fb;
     color: #000000;
     padding: 10px 20px;
     position: relative;
+   
 }
+
+
 
 .logo {
     font-size: 1.5em;
@@ -21,20 +30,24 @@ nav {
     margin-right: auto;
 }
 
+
+
 .menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 300px;
     margin: 0;
     padding: 0;
 }
 
+
 .menu li {
     list-style: none;
+    
 }
 
 .menu a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s;
@@ -57,12 +70,25 @@ nav {
         flex-direction: column;
         width: 100%;
         text-align: center;
-        background-color: #333;
+        background-color: rgb(255, 255, 255);
         position: absolute;
-        top: 60px;
+        top: 0px;
         left: 0;
         z-index: 1;
+        gap: 10px;
+        
     }
+
+      
+     
+     
+       
+       
+      }
+
+
+    
+
 
     .menu.show {
         display: flex;
@@ -73,13 +99,17 @@ nav {
     }
 
     .menu li {
-        padding: 10px;
+        margin: 5px 0; /* Reduce espacio entre elementos */
+        padding: 10px; /* Ajusta el relleno interno */
+        line-height: 1.2; 
+        color: #000000;
     }
 
     .menu a {
         display: block;
+        color: #000000;
     }
-}
+
 
 
 
@@ -87,14 +117,16 @@ nav {
 
 
 footer {
-    background-color: #1155fe;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  }
 
 .marca{
 	font-size: 20px;
@@ -142,7 +174,7 @@ footer {
 	margin-top: 20px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 780px) {
 	footer {
 		padding: 2px 0;
 	}
@@ -198,5 +230,41 @@ footer {
         flex: 1 1 100%; /* Cada .contactanos ocupa el 100% del ancho del contenedor en pantallas pequeñas */
     }
 }
+
+
+
+
+.text-box {
+    border: 2px solid #007bff; /* Borde del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen para centrar el cuadro */
+    max-width: 800px; /* Ancho máximo del cuadro */
+    background-color:none ; /* Color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del cuadro */
+}
+
+.text-box h2.title-welcome {
+    color: #007bff; /* Color del título */
+}
+
+.text-box p {
+    color:  #000000; /* Color del texto */
+}
+
+.text-box .welcome-button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el cursor */
+}
+
+.text-box .welcome-button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
+}
+
 
 
