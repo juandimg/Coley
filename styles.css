@@ -1,0 +1,304 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+}
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+    background-color: #0f339f;
+    color: #ffffff;
+    padding: 10px 20px;
+    position: relative;
+   
+}
+
+
+nav details {
+    position: relative;
+}
+
+nav details summary {
+    cursor: pointer;
+}
+
+nav details div {
+    max-height: 200px; /* Limita la altura máxima */
+    overflow-y: auto; /* Agrega un desplazamiento si el contenido es demasiado alto */
+    background-color: #f9f9f9; /* Fondo opcional */
+    border: 1px solid #ddd; /* Borde opcional */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    position: absolute;
+    z-index: 10; /* Para que no se esconda detrás de otros elementos */
+}
+
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-icon {
+    display: none; /* Oculto por defecto */
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.menu li {
+    list-style: none;
+    
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .menu {
+        display:none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(72, 23, 250);
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: 1;
+        gap: 10px;
+        
+    }
+
+    .menu-icon {
+        display: block; /* Visible solo en pantallas pequeñas */
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #000; /* Color del ícono */
+    }
+
+    
+     
+     
+       
+       
+      }
+
+
+    
+
+
+    .menu.show {
+        display: flex;
+    }
+
+   
+
+    .menu li {
+        margin: 5px 0; /* Reduce espacio entre elementos */
+        padding: 10px; /* Ajusta el relleno interno */
+        line-height: 1.2; 
+        color: #000000;
+    }
+
+    .menu a {
+        display: block;
+        color: #ffffff;
+    }
+
+
+
+.nosotros a{
+
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.marca{
+	font-size: 20px;
+	padding-bottom: 2px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenedor-footer{
+	display: grid;
+	grid-template-columns: 20% 30% 20%;
+	padding: 2px 0;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin: 0 2px;
+}
+
+.redes-sociales{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	grid-column: 3;
+}
+
+.icono-redesSociales{
+	margin: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.icono-redesSociales:hover{
+	background: #ffffff9f;
+	transition: filter 0.35s ease;
+}
+
+.icono-redesSociales i{
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.derechos{
+	margin-top: 20px;
+}
+
+@media (max-width: 780px) {
+	footer {
+		padding: 2px 0;
+	}
+
+	.marca {
+		font-size: 18px;
+		padding-bottom: 1px;
+	}
+
+	.contenedor-footer {
+		padding: 2px 0;
+		margin: 0 5px;
+	}
+
+	.icono-redesSociales {
+		width: 30px;
+		height: 30px;
+		margin: 2px;
+	}
+
+	.icono-redesSociales i {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	.derechos {
+		margin-top: 10px;
+	}
+}
+
+#contacto {
+    background-color: #36b3f1;
+    padding: 20px;
+}
+
+.contenedor-footer {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    gap: 10px; /* Espacio entre los elementos */
+    justify-content: space-between; /* Espacio entre los elementos para hacerlos más flexibles */
+}
+
+.contactanos {
+    flex: 1 1 45%; /* Hace que cada .contactanos ocupe el 45% del ancho del contenedor y permite que se ajuste */
+}
+
+@media (max-width: 600px) {
+    .contenedor-footer {
+        flex-direction: column; /* En pantallas pequeñas, los elementos se apilan verticalmente */
+    }
+
+    .contactanos {
+        flex: 1 1 100%; /* Cada .contactanos ocupa el 100% del ancho del contenedor en pantallas pequeñas */
+    }
+}
+
+
+
+
+.text-box {
+    border: 2px solid #007bff; /* Borde del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen para centrar el cuadro */
+    max-width: 800px; /* Ancho máximo del cuadro */
+    background-color:none ; /* Color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del cuadro */
+}
+
+.text-box h2.title-welcome {
+    color: #007bff; /* Color del título */
+}
+
+.text-box p {
+    color:  #000000; /* Color del texto */
+}
+
+.text-box .welcome-button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el cursor */
+}
+
+.text-box .welcome-button:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
+}
+
+
+

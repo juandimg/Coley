@@ -1,0 +1,184 @@
+.clases-container{
+	width: 100%;
+	height: 125vh;
+	display: grid;
+	align-items: center;
+	grid-template-rows: 1fr 7fr;
+	background: rgba(12, 177, 232, 0.56);
+}
+
+.title-clases{
+	width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: rgba(22, 21, 20, 0.923);
+    font-size: 35px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.contenedor-iconos {
+    width: 100%;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+	row-gap: 40px;
+}
+
+.clases {
+	width: 100%;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+
+
+.clases img {
+    width: 90%;
+    box-shadow: 0 0 10px rgba(112, 86, 16, 0.401);
+    border-radius: 2.5rem;
+    cursor: pointer;
+	margin-top: 10px;
+    padding: 25px;
+	
+}
+
+.clases-info p:nth-child(1) {
+	width: 100%;
+	font-weight: bold;
+    font-size: 19px;
+	color: rgba(112, 86, 16, 0.88);
+    margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.clases-info p:nth-child(2) {
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 14px;
+    color: rgba(20, 21, 25, 0.516);
+    font-family: 'DM Serif Display', serif;
+}
+
+
+.contenedor-iconos img:hover{
+	filter: invert(88%);
+	background: rgba(101, 126, 194, 0.864);
+}
+
+/* footer.css */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.marca{
+	font-size: 20px;
+	padding-bottom: 2px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenedor-footer{
+	display: grid;
+	grid-template-columns: 20% 30% 20%;
+	padding: 2px 0;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin: 0 2px;
+}
+
+.redes-sociales{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	grid-column: 3;
+}
+
+.icono-redesSociales{
+	margin: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.icono-redesSociales:hover{
+	background: #ffffff9f;
+	transition: filter 0.35s ease;
+}
+
+.icono-redesSociales i{
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.derechos{
+	margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+	footer {
+		padding: 2px 0;
+	}
+
+	.marca {
+		font-size: 18px;
+		padding-bottom: 1px;
+	}
+
+	.contenedor-footer {
+		padding: 2px 0;
+		margin: 0 5px;
+	}
+
+	.icono-redesSociales {
+		width: 30px;
+		height: 30px;
+		margin: 2px;
+	}
+
+	.icono-redesSociales i {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	.derechos {
+		margin-top: 10px;
+	}
+}
+
+#contacto {
+    background-color: #36b3f1;
+    padding: 20px;
+}
+
+.contenedor-footer {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    gap: 10px; /* Espacio entre los elementos */
+    justify-content: space-between; /* Espacio entre los elementos para hacerlos más flexibles */
+}
+
+.contactanos {
+    flex: 1 1 45%; /* Hace que cada .contactanos ocupe el 45% del ancho del contenedor y permite que se ajuste */
+}
+
+@media (max-width: 600px) {
+    .contenedor-footer {
+        flex-direction: column; /* En pantallas pequeñas, los elementos se apilan verticalmente */
+    }
+
+    .contactanos {
+        flex: 1 1 100%; /* Cada .contactanos ocupa el 100% del ancho del contenedor en pantallas pequeñas */
+    }
+}
+

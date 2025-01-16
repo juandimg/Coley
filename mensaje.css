@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;      /* Centra verticalmente */
+  height: 100vh;
+}
+
+.formulario {
+  padding: 20px;
+  background-color: #5ca6f6;
+  width: 400px;             /* Ajusta el ancho del formulario */
+  border-radius: 10px;      /* Opcional: Bordes redondeados para mejorar la apariencia */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label, input, textarea, button {
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 20px;
+}
+
+button {
+  padding: 10px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+
