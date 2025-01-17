@@ -40,10 +40,10 @@
 .clases img {
     width: 90%;
     box-shadow: 0 0 10px rgba(112, 86, 16, 0.401);
-    border-radius: 2.5rem;
+    border-radius: 1.5rem;
     cursor: pointer;
 	margin-top: 10px;
-    padding: 25px;
+    padding: 5px;
 	
 }
 
@@ -67,8 +67,8 @@
 
 
 .contenedor-iconos img:hover{
-	filter: invert(88%);
-	background: rgba(101, 126, 194, 0.864);
+	transform: scale(1.4);
+	background: rgb(245, 245, 245);
 }
 
 /* footer.css */
