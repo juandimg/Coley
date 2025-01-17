@@ -4,7 +4,7 @@
 	display: grid;
 	align-items: center;
 	grid-template-rows: 1fr 7fr;
-	background: rgba(12, 177, 232, 0.56);
+	background: rgba(218, 242, 250, 0.56);
 }
 
 .title-clases{
