@@ -266,6 +266,18 @@ footer {
 }
 
 
+video {
+    position: fixed;
+    top: 5;
+    left: 5;
+    width:100%; /*Cubre todo el ancho de la pantalla*/
+    height: 100%; /*Cubre el alto de la pantalla*/
+    object-fit: cover; /*Para que no se deforme el video*/
+    z-index: -1; /* El video queda de fondo y detras del demas contenido*/
+    opacity: 0.6; /*Para que no opaque el video*/
+    
+  }
+
 
 
 .text-box {
