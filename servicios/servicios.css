@@ -17,34 +17,54 @@
 }
 
 .contenedor-iconos {
-    width: 100%;
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
-	align-items: center;
-	justify-content: center;
-	row-gap: 40px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+    gap: 20px; /* Espacio entre elementos */
+    max-width: 1200px; /* Opcional: limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
 }
 
 .clases {
-	width: 100%;
-    display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+    text-align: center;
+    border: 1px solid #001aff; /* Borde opcional */
+    border-radius: 8px;
+    overflow: hidden;
+	background-color: #ccd0ef;
 }
 
-
-
-
-
 .clases img {
-    width: 90%;
-    box-shadow: 0 0 10px rgba(112, 86, 16, 0.401);
-    border-radius: 1.5rem;
-    cursor: pointer;
-	margin-top: 10px;
-    padding: 5px;
-	
+    width: 100%;
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Ajusta la imagen sin deformar */
+}
+
+.card-img-top{
+	width: 100%;
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Ajusta la imagen sin deformar */
+	text-align: center;
+    border: 1px solid #001aff; /* Borde opcional */
+    border-radius: 8px;
+    overflow: hidden;
+	background-color: #ccd0ef;
+	display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
+    gap: 20px; /* Espacio entre elementos */
+    max-width: 1200px; /* Opcional: limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .contenedor-iconos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .contenedor-iconos {
+        grid-template-columns: 1fr;
+    }
 }
 
 .clases-info p:nth-child(1) {
@@ -76,6 +96,7 @@ footer {
     background-color: #f1f1f1;
     text-align: center;
     padding: 10px 0;
+	margin-top: 50px; /* Ajusta este valor según el espacio que desees */
 }
 
 
@@ -181,4 +202,5 @@ footer {
         flex: 1 1 100%; /* Cada .contactanos ocupa el 100% del ancho del contenedor en pantallas pequeñas */
     }
 }
+
 
