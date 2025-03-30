@@ -1,206 +1,112 @@
-.clases-container{
-	width: 100%;
-	height: 125vh;
-	display: grid;
-	align-items: center;
-	grid-template-rows: 1fr 7fr;
-	background: rgba(218, 242, 250, 0.56);
+.servicios-container{
+    max-width: 1200px;
+    margin: 50px auto;
+    line-height: 1.6;
 }
 
-.title-clases{
-	width: 100%;
+.header-section {
     text-align: center;
-    font-weight: 500;
-    color: rgba(22, 21, 20, 0.923);
-    font-size: 35px;
-    font-family: 'DM Serif Display', serif;
+    margin-bottom: 60px;
 }
 
-.contenedor-iconos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
-    gap: 20px; /* Espacio entre elementos */
-    max-width: 1200px; /* Opcional: limita el ancho máximo */
-    margin: 0 auto; /* Centra el contenedor */
-    padding: 20px;
+.header-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: #000000;
+    position: relative;
+    display: inline-block;
 }
 
-.clases {
-    text-align: center;
-    border: 1px solid #001aff; /* Borde opcional */
-    border-radius: 8px;
-    overflow: hidden;
-	background-color: #ccd0ef;
-}
-
-.clases img {
+.header-section h2::after {
+    content: '';
+    position: absolute;
     width: 100%;
-    height: 200px; /* Altura fija */
-    object-fit: cover; /* Ajusta la imagen sin deformar */
+    height: 4px;
+    background-color: #000000;
+    left: 0;
+    bottom: -10px;
 }
 
-.card-img-top{
-	width: 100%;
-    height: 200px; /* Altura fija */
-    object-fit: cover; /* Ajusta la imagen sin deformar */
-	text-align: center;
-    border: 1px solid #001aff; /* Borde opcional */
-    border-radius: 8px;
+.header-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.servicios-coley{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.servicio-card{
+    background-color: #f7f7f7;
+    border-radius: 10px;
     overflow: hidden;
-	background-color: #ccd0ef;
-	display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas por fila */
-    gap: 20px; /* Espacio entre elementos */
-    max-width: 1200px; /* Opcional: limita el ancho máximo */
-    margin: 0 auto; /* Centra el contenedor */
-    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.servicio-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 40px 30px 30px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.card-content p {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #58b1ff;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
-    .contenedor-iconos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (max-width: 480px) {
-    .contenedor-iconos {
+    .servicios-grid {
         grid-template-columns: 1fr;
     }
-}
-
-.clases-info p:nth-child(1) {
-	width: 100%;
-	font-weight: bold;
-    font-size: 19px;
-	color: rgba(112, 86, 16, 0.88);
-    margin-bottom: 10px;
-	margin-top: 10px;
-}
-
-.clases-info p:nth-child(2) {
-    width: 100%;
-    text-align: center;
-    font-weight: 100;
-    font-size: 14px;
-    color: rgba(20, 21, 25, 0.516);
-    font-family: 'DM Serif Display', serif;
-}
-
-
-.contenedor-iconos img:hover{
-	transform: scale(1.4);
-	background: rgb(245, 245, 245);
-}
-
-/* footer.css */
-footer {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px 0;
-	margin-top: 50px; /* Ajusta este valor según el espacio que desees */
-}
-
-
-.marca{
-	font-size: 20px;
-	padding-bottom: 2px;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.contenedor-footer{
-	display: grid;
-	grid-template-columns: 20% 30% 20%;
-	padding: 2px 0;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	margin: 0 2px;
-}
-
-.redes-sociales{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	grid-column: 3;
-}
-
-.icono-redesSociales{
-	margin: 5px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.icono-redesSociales:hover{
-	background: #ffffff9f;
-	transition: filter 0.35s ease;
-}
-
-.icono-redesSociales i{
-	font-size: 20px;
-	line-height: 40px;
-}
-
-.derechos{
-	margin-top: 20px;
-}
-
-@media (max-width: 640px) {
-	footer {
-		padding: 2px 0;
-	}
-
-	.marca {
-		font-size: 18px;
-		padding-bottom: 1px;
-	}
-
-	.contenedor-footer {
-		padding: 2px 0;
-		margin: 0 5px;
-	}
-
-	.icono-redesSociales {
-		width: 30px;
-		height: 30px;
-		margin: 2px;
-	}
-
-	.icono-redesSociales i {
-		font-size: 16px;
-		line-height: 30px;
-	}
-
-	.derechos {
-		margin-top: 10px;
-	}
-}
-
-#contacto {
-    background-color: #36b3f1;
-    padding: 20px;
-}
-
-.contenedor-footer {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
-    gap: 10px; /* Espacio entre los elementos */
-    justify-content: space-between; /* Espacio entre los elementos para hacerlos más flexibles */
-}
-
-.contactanos {
-    flex: 1 1 45%; /* Hace que cada .contactanos ocupe el 45% del ancho del contenedor y permite que se ajuste */
-}
-
-@media (max-width: 600px) {
-    .contenedor-footer {
-        flex-direction: column; /* En pantallas pequeñas, los elementos se apilan verticalmente */
-    }
-
-    .contactanos {
-        flex: 1 1 100%; /* Cada .contactanos ocupa el 100% del ancho del contenedor en pantallas pequeñas */
+    
+    .header-section h2 {
+        font-size: 2.2rem;
     }
 }
-
-
