@@ -18,7 +18,7 @@ nav {
     align-items: center;
     background-color: #0f339f;
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 1 rem;
     position: relative;
    
 }
@@ -69,6 +69,8 @@ nav details div {
 
 .menu li {
     list-style: none;
+    margin: 0 1rem;
+    position: relative;
     
 }
 
@@ -140,6 +142,22 @@ nav details div {
     }
 
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 
 .nosotros a{
 
@@ -151,134 +169,8 @@ nav details div {
 
 
 
-footer {
-    margin-top: 50px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
-  }
-
-.marca{
-	font-size: 20px;
-	padding-bottom: 2px;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.contenedor-footer{
-	display: grid;
-	grid-template-columns: 20% 30% 20%;
-	padding: 2px 0;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	margin: 0 2px;
-}
-
-.redes-sociales{
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	grid-column: 3;
-}
-
-.icono-redesSociales{
-	margin: 5px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.icono-redesSociales:hover{
-	background: #ffffff9f;
-	transition: filter 0.35s ease;
-}
-
-.icono-redesSociales i{
-	font-size: 20px;
-	line-height: 40px;
-}
-
-.derechos{
-	margin-top: 20px;
-}
-
-@media (max-width: 780px) {
-	footer {
-		padding: 2px 0;
-	}
-
-	.marca {
-		font-size: 18px;
-		padding-bottom: 1px;
-	}
-
-	.contenedor-footer {
-		padding: 2px 0;
-		margin: 0 5px;
-	}
-
-	.icono-redesSociales {
-		width: 30px;
-		height: 30px;
-		margin: 2px;
-	}
-
-	.icono-redesSociales i {
-		font-size: 16px;
-		line-height: 30px;
-	}
-
-	.derechos {
-		margin-top: 10px;
-	}
-}
-
-#contacto {
-    background-color: #36b3f1;
-    padding: 20px;
-}
-
-.contenedor-footer {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
-    gap: 10px; /* Espacio entre los elementos */
-    justify-content: space-between; /* Espacio entre los elementos para hacerlos más flexibles */
-}
-
-.contactanos {
-    flex: 1 1 45%; /* Hace que cada .contactanos ocupe el 45% del ancho del contenedor y permite que se ajuste */
-}
-
-@media (max-width: 600px) {
-    .contenedor-footer {
-        flex-direction: column; /* En pantallas pequeñas, los elementos se apilan verticalmente */
-    }
-
-    .contactanos {
-        flex: 1 1 100%; /* Cada .contactanos ocupa el 100% del ancho del contenedor en pantallas pequeñas */
-    }
-}
 
 
-video {
-    position: fixed;
-    top: 5;
-    left: 5;
-    width:100%; /*Cubre todo el ancho de la pantalla*/
-    height: 100%; /*Cubre el alto de la pantalla*/
-    object-fit: cover; /*Para que no se deforme el video*/
-    z-index: -1; /* El video queda de fondo y detras del demas contenido*/
-    opacity: 0.6; /*Para que no opaque el video*/
-    
-  }
 
 
 
