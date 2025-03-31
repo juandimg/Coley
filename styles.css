@@ -207,6 +207,12 @@ nav details div {
 }
 
 
+.text-box h3{
+    color: #000000; /* Color del título */
+    top: center;
+    font-weight: 700;
+    text-align: center;
+}
 
 
 
